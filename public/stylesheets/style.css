@@ -169,3 +169,14 @@ header .topbar {
     background-color: #0076BF;
     background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .3))!important;
 }
+
+.basket {
+    position: fixed;
+    width: 330px;
+    height: auto;
+    max-height: 72%;
+    overflow: auto;
+    right: 0;
+    top: 205px;
+    z-index: 1001;
+}
