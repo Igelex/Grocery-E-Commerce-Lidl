@@ -23,14 +23,14 @@
                 <div class="col-xs-12 col-sm-6 float-right">
                     <ul class="company-area text-right">
                         <li>
-                            <a href="verantwortung-bei-lidl/s7377405">Compliance</a>
+                            <a>Compliance</a>
                         </li>
                         <li>
-                            <a href="geschichte/s1243">About Lidl</a></li>
+                            <a>About Lidl</a></li>
                         <li>
-                            <a href="http://jobs.lidl.de/"> Careers</a></li>
+                            <a> Careers</a></li>
                         <li>
-                            <a href="service-hilfe/s7372257">Service &amp; Help</a>
+                            <a>Service &amp; Help</a>
                         </li>
                     </ul>
                 </div>
@@ -63,13 +63,20 @@
                     </ul>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href=""><i class="fas fa-2x fa-sign-in-alt"></i></a>
+                            <a class="nav-link" href=""><i class="fa-2x far fa-newspaper"></i></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href=""><i class="fa-2x far fa-envelope"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=""><i class="fa-2x far fa-user"></i></a>
                         </li>
                         <li id="minibasket" class="nav-item">
-                            <a class="nav-link"><i class="fas fa-2x fa-clipboard-list"></i></a>
+                            <a class="nav-link"><i class="fas fa-2x fa-list-ul"></i></a>
                         </li>
                         <li id="minibasket" class="nav-item">
-                            <a class="nav-link"><i class="fas fa-2x fa-shopping-basket"></i></a>
+                            <a class="nav-link"><i class="fa-2x fas fa-shopping-cart"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -96,12 +103,12 @@
 
             </ul>
         </div>
-        <div id="nav-items-container" class="nav-items-container bg-light shadow-sm rounded disp-none">
+        <div id="nav-items-container" style="margin-left: -15px" class="nav-items-container bg-light shadow-sm rounded disp-none">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4 group-1">
                         <ul class="item-list">
-                            <li class="item"><i class="fas fa-arrow-circle-right"></i><a>Fresh Food</a></li>
+                            <li id="food" class="item"><i class="fas fa-arrow-circle-right"></i><a>Fresh Food</a></li>
                             <li class="item"><i class="fas fa-arrow-circle-right"></i><a>Bakery</a></li>
                             <li class="item"><i class="fas fa-arrow-circle-right"></i><a>Food Cupboard</a></li>
                             <li class="item"><i class="fas fa-arrow-circle-right"></i><a>Frozen Food</a></li>
@@ -113,7 +120,7 @@
                             <li class="item"><i class="fas fa-arrow-circle-right"></i><a>Special Events</a></li>
                         </ul>
                     </div>
-                    <div id="group-2" class="col-sm-4 disp-none">
+                    <div id="group-2-drinks" class="col-sm-4 disp-none">
                         <ul class="item-list">
                             <li class="item"><i class="fas fa-arrow-circle-right"></i><a>Juices & Smoothies</a></li>
                             <li id="water" class="item"><i class="fas fa-arrow-circle-right"></i><a>Bottled Water</a>
@@ -127,12 +134,39 @@
 
                         </ul>
                     </div>
-                    <div id="group-3" class="col-sm-4 disp-none">
+                    <div id="group-2-food" class="col-sm-4 disp-none">
                         <ul class="item-list">
-                            <li class="item"><i class="fas fa-arrow-circle-right"></i><a>Still Water</a></li>
+                            <li id="food-2" class="item"><i class="fas fa-arrow-circle-right"></i><a>Fresh Fruit</a></li>
+                            <li class="item"><i class="fas fa-arrow-circle-right"></i><a>Fresh Vegetables</a></li>
+                            <li class="item"><i class="fas fa-arrow-circle-right"></i><a>Fresh Salad & Dips</a></li>
+                            <li class="item"><i class="fas fa-arrow-circle-right"></i><a>Dairy Products</a></li>
+                            <li class="item"><i class="fas fa-arrow-circle-right"></i><a>Fresh Meat & Poultry</a></li>
+                            <li class="item"><i class="fas fa-arrow-circle-right"></i><a>Fish & Seafood</a></li>
+                            <li class="item"><i class="fas fa-arrow-circle-right"></i><a>Ready Meals</a></li>
+                            <li class="item"><i class="fas fa-arrow-circle-right"></i><a>Vegetarian. Gluten & Dairy Free</a></li>
+                        </ul>
+                    </div>
+                    <div id="group-3-water" class="col-sm-4 disp-none">
+                        <ul class="item-list">
+                            <li class="item"><i class="fas fa-arrow-circle-right"></i><a href="/search">Still Water</a></li>
                             <li class="item"><i class="fas fa-arrow-circle-right"></i><a>Sparkling Water</a></li>
                             <li class="item"><i class="fas fa-arrow-circle-right"></i><a>Flavoured Water</a></li>
                             <li class="item"><i class="fas fa-arrow-circle-right"></i><a>Bigger Pack Water</a></li>
+                        </ul>
+                    </div>
+                    <div id="group-3-food" class="col-sm-4 disp-none">
+                        <ul class="item-list">
+                            <li class="item"><i class="fas fa-arrow-circle-right"></i><a href="/search">Bananas</a></li>
+                            <li class="item"><i class="fas fa-arrow-circle-right"></i><a>Apples & Pears</a></li>
+                            <li class="item"><i class="fas fa-arrow-circle-right"></i><a>Berries & Cherries</a></li>
+                            <li class="item"><i class="fas fa-arrow-circle-right"></i><a>Oranges, Lemons & Citrus Fruit</a></li>
+                            <li class="item"><i class="fas fa-arrow-circle-right"></i><a>Peaches, Nectarines, Plums & Apricots</a></li>
+                            <li class="item"><i class="fas fa-arrow-circle-right"></i><a>Melons & Pineapples</a></li>
+                            <li class="item"><i class="fas fa-arrow-circle-right"></i><a>Mango, Kiwi & Exotic Fruit</a></li>
+                            <li class="item"><i class="fas fa-arrow-circle-right"></i><a>Rhubarb</a></li>
+                            <li class="item"><i class="fas fa-arrow-circle-right"></i><a>Dried Fruit</a></li>
+                            <li class="item"><i class="fas fa-arrow-circle-right"></i><a>Organic Fruit</a></li>
+                            <li class="item"><i class="fas fa-arrow-circle-right"></i><a>Grapes</a></li>
                         </ul>
                     </div>
                 </div>
@@ -142,7 +176,7 @@
 </header>
 
 <div class="container bg-light rounded shadow-sm mt-4 p-4">
-    <div class="row mt-4">
+    <div class="row">
         <div class="col-sm-12">
             <input id="search" class="form-control form-control-lg" type="text" placeholder="Search">
         </div>
@@ -305,7 +339,7 @@
                         </div>
                     </li>
                     <li class="list-group-item">
-                        <h6 style="display: inline">€ 0,30</h6> <span class="ml-2">2.1/Kg</span>
+                        <h6 style="display: inline">€ 0.30</h6> <span class="ml-2">2.1/Kg</span>
                     </li>
                 </ul>
                 <div class="card-body">
@@ -339,7 +373,7 @@
                         </div>
                     </li>
                     <li class="list-group-item">
-                        <h6 style="display: inline">€ 0,80</h6> <span class="ml-2">0.16/each</span>
+                        <h6 style="display: inline">€ 0.80</h6> <span class="ml-2">0.16/each</span>
                     </li>
                 </ul>
                 <div class="card-body">

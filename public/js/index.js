@@ -10,14 +10,26 @@ $('#groceries').click(() => {
     $('#nav-items-container').fadeToggle(300);
 });
 
+$('#food').click(() => {
+    $('#group-2-drinks').fadeOut(0);
+    $('#group-3-water').fadeOut(0);
+    $('#group-3-food').fadeOut(0);
+    $('#group-2-food').fadeToggle(200);
+});
+
 $('#drinks').click(() => {
-    $('#group-2').fadeToggle(200);
+    $('#group-2-drinks').fadeToggle(200);
+    $('#group-2-food').fadeOut(0);
+    $('#group-3-food').fadeOut(0);
+
 });
+
 $('#water').click(() => {
-    $('#group-3').fadeToggle(200);
+    $('#group-3-water').fadeToggle(200);
 });
-$( "#search" ).autocomplete({
-    source: ['hui', 'pizda']
+
+$('#food-2').click(() => {
+    $('#group-3-food').fadeToggle(200);
 });
 
 $('.card').each((i, item) => {
@@ -54,5 +66,3 @@ function addItemToBasket(title, img) {
         $('#basket').fadeIn(300);
     }
 }
-
-

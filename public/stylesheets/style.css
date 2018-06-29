@@ -76,16 +76,10 @@ header .topbar {
 .second-nav li {
     transition: all .5s;
     padding: 5px 10px;
-    border-bottom: 8px solid transparent;
 }
 
 .second-nav li:hover {
     background-color: #d7d7d7;
-    border-bottom: 8px solid #f8f9fa;
-
-}
-
-.second-nav .nav-item:hover {
 }
 
 .item {
@@ -97,6 +91,7 @@ header .topbar {
     border-bottom: 2px solid #eaeaea;
     cursor: pointer;
 }
+
 .item:hover {
     background-color: #eaeaea;
     padding-left: 10px;
@@ -161,6 +156,7 @@ header .topbar {
 .card {
     transition: all .5s;
 }
+
 .card:hover {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.32);
 }
