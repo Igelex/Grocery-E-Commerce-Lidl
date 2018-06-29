@@ -1,1 +1,0 @@
-# Grocery-E-Commerce-Lidl
