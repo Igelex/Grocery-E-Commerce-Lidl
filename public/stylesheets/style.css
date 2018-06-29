@@ -147,6 +147,7 @@ header .topbar {
 }
 
 .card-title {
+    margin-bottom: 0 !important;
     cursor: pointer;
     transition: all .5s;
     color: #0076BF;
@@ -161,7 +162,7 @@ header .topbar {
     transition: all .5s;
 }
 .card:hover {
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.32);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.32);
 }
 
 .dropdown-toggle {
@@ -170,13 +171,27 @@ header .topbar {
     background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .3))!important;
 }
 
-.basket {
+#basket {
     position: fixed;
-    width: 330px;
+    width: 280px;
     height: auto;
     max-height: 72%;
     overflow: auto;
     right: 0;
     top: 205px;
     z-index: 1001;
+}
+
+.card-body > .close {
+    top: 75%;
+    position: absolute;
+    right: 10px;
+}
+
+.basket-img {
+    position: relative;
+    top: 25%;
+    left: 25%;
+    width: 100px;
+    height: 100px !important;
 }

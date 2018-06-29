@@ -28,18 +28,28 @@ $('.card').each((i, item) => {
     $(add_button).click(() => {
 
         let new_item = {
-            title: $(item).find('.card-title'),
+            title: $(item).find('.card-title').text(),
             img: $(item).find('.card-img-top').attr('src')
         };
 
+        addItemToBasket(new_item.title, new_item.img);
+
         bakets_items.push(new_item);
-
-        console.warn(new_item);
-
     })
 });
 
-function addItemToBasket() {
+function addItemToBasket(title, img) {
+
+    let template = $(`<div class="card shadow-sm mb-2 disp-none">
+        <img class="card-img-to basket-img" src="${img}">
+        <div class="card-body">
+            <h5 class="card-title">${title}</h5>
+            <i class="fas fa-times close"></i>
+        </div>
+    </div>`);
+
+    $('#basket').append(template);
+
     if (bakets_items.length === 0) {
         $('#basket').fadeIn(300);
     }
