@@ -1,8 +1,146 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.company-area {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
-a {
-  color: #00B7FF;
+.company-area li {
+    display: inline-block;
+}
+
+header .topbar {
+    background-color: #6D757C;
+}
+
+.company-area a {
+    font-size: .7rem;
+    color: white !important;
+}
+
+.company-area li {
+    margin: 0;
+    transition: background-color .5s;
+    padding: 10px 5px;
+}
+
+.company-area li:hover {
+    background-color: #4d555c;
+}
+
+.llogo {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    display: block;
+    margin-top: -2rem;
+    border: 1px solid #fff;
+    width: 104px;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .5);
+}
+
+.lidl-button {
+    border: none;
+    background-color: #0076BF;
+    border-radius: 0;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .3));
+    cursor: pointer;
+    color: #FFF;
+    display: inline-block;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    padding: .625rem 1.25rem;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: baseline;
+    zoom: 1;
+    font-weight: 700;
+    font-size: 16px;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .15);
+    -webkit-font-smoothing: antialiased;
+}
+.second-nav a {
+    font-family: 'Montserrat Light';
+    color: #4d555c !important;
+    font-size: 1.2rem !important;
+}
+
+.second-nav li {
+    transition: all .5s;
+    padding: 5px 10px;
+    border-bottom: 8px solid transparent;
+}
+
+.second-nav li:hover {
+    background-color: #d7d7d7;
+    border-bottom: 8px solid #f8f9fa;
+
+}
+
+.second-nav .nav-item:hover {
+}
+
+.item {
+    transition: all .4s;
+    width: 100%;
+    display: block;
+    list-style-type: none;
+    padding: 5px 10px;
+    border-bottom: 2px solid #eaeaea;
+    cursor: pointer;
+}
+.item:hover {
+    background-color: #eaeaea;
+    padding-left: 10px;
+    border-bottom: 2px solid rgba(104, 164, 234, 0.72);
+}
+
+.item > i {
+    position: relative;
+    left: 90%;
+    top: 10%;
+    color: gray;
+}
+
+.item > a {
+    position: relative;
+    left: -15px;
+    top: 0;
+}
+
+.item-list{
+    padding: 20px 0;
+    margin: 0 !important;
+}
+.nav-items-container{
+    z-index: 1000;
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.disp-none {
+    display: none;
+}
+
+.company-area .nav-link {
+    font-size: 1rem;
+}
+
+.company-area li.nav-item {
+    border-bottom: 2px solid transparent;
+    padding: 0;
+}
+
+.company-area li.nav-item:hover {
+    background-color: transparent;
+    border-bottom: 2px solid white;
 }
