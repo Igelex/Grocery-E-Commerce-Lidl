@@ -78,5 +78,9 @@ function addItemToBasket(title, img) {
 $( "#datepicker" ).datepicker();
 
 $('document').ready(function () {
-    $('main').fadeIn(500);
+    setTimeout(() => {
+        $('.loading-overlay').fadeOut(300);
+        $('main').fadeIn(500);
+
+    },500);
 });
