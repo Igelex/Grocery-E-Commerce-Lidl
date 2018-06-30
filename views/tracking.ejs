@@ -211,46 +211,48 @@
     </div>
 </main>
 
-
 <script>
     var map;
     var marker;
+
     function initMap() {
-        var location = {lat: 50.763060, lng: 6.084259};
-        var dist = {lat: 50.759721, lng: 6.082864};
+        try {
+            var location = {lat: 50.763060, lng: 6.084259};
+            var dist = {lat: 50.759721, lng: 6.082864};
 
-        map = new google.maps.Map(document.getElementById('map'), {
-            center: location,
-            zoom: 16,
-            zoomControl: true,
-            mapTypeControl: true,
-            scaleControl: true,
-            streetViewControl: true,
-            rotateControl: true,
-            fullscreenControl: true
-        });
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: location,
+                zoom: 16,
+                zoomControl: true,
+                mapTypeControl: true,
+                scaleControl: true,
+                streetViewControl: true,
+                rotateControl: true,
+                fullscreenControl: true
+            });
 
-        marker = new google.maps.Marker({
-            position: location,
-            map: map,
-            title: 'Banana loose!',
-            draggable: false,
-            animation: google.maps.Animation.DROP,
-            icon: '/images/tr.png'
-        });
+            marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                title: 'Banana loose!',
+                draggable: false,
+                animation: google.maps.Animation.DROP,
+                icon: '/images/tr.png'
+            });
 
-        var marker_dist = new google.maps.Marker({
-            position: dist,
-            map: map,
-            title: 'Banana loose!',
-            draggable: false,
-            animation: google.maps.Animation.DROP,
-            icon: '/images/h.png'
-        });
-
-        marker.addListener('click', toggleBounce ());
+            var marker_dist = new google.maps.Marker({
+                position: dist,
+                map: map,
+                title: 'Banana loose!',
+                draggable: false,
+                animation: google.maps.Animation.DROP,
+                icon: '/images/h.png'
+            });
+            marker.addListener('click', toggleBounce());
+        } catch (e) {
+            console.log(e);
+        }
     }
-
     function toggleBounce() {
         if (marker.getAnimation() !== null) {
             marker.setAnimation(null);
@@ -259,7 +261,7 @@
         }
     }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"
+<script src="https://maps.googleapis.com/maps/api/js?key={YOUR KEY}&callback=initMap"
         async defer></script>
 
 <script src="main.js" type="text/javascript"></script>

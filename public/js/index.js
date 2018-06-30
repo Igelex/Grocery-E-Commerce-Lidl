@@ -1,7 +1,6 @@
 import 'bootstrap';
 import 'popper.js';
 import 'jquery-ui-bundle';
-//import 'jquery-ui-bundle/jquery-ui.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../stylesheets/circle.css';
 import '../stylesheets/style.css';
@@ -36,22 +35,17 @@ $('#food-2').click(() => {
     $('#group-3-food').fadeToggle(200);
 });
 
-$('.card').each((i, item) => {
-    let add_button = $(item).find('.add-to-basket');
 
-    //console.log(add_button);
+$('.add-to-basket').click(() => {
 
-    $(add_button).click(() => {
+    let new_item = {
+        title: $('#item-titel').text(),
+        img: $('#item-img').attr('src')
+    };
 
-        let new_item = {
-            title: $(item).find('.card-title').text(),
-            img: $(item).find('.card-img-top').attr('src')
-        };
+    addItemToBasket(new_item.title, new_item.img);
 
-        addItemToBasket(new_item.title, new_item.img);
-
-        bakets_items.push(new_item);
-    })
+    bakets_items.push(new_item);
 });
 
 $('.card-img-top').click(() => {
@@ -60,7 +54,7 @@ $('.card-img-top').click(() => {
 
 function addItemToBasket(title, img) {
 
-    let template = $(`<div class="card shadow-sm mb-2 disp-none">
+    let template = $(`<div class="card shadow-sm mb-2">
         <img class="card-img-to basket-img" src="${img}">
         <div class="card-body">
             <h5 class="card-title">${title}</h5>
@@ -75,12 +69,12 @@ function addItemToBasket(title, img) {
     }
 }
 
-$( "#datepicker" ).datepicker();
+$("#datepicker").datepicker();
 
 $('document').ready(function () {
     setTimeout(() => {
         $('.loading-overlay').fadeOut(300);
         $('main').fadeIn(500);
 
-    },500);
+    }, 300);
 });
