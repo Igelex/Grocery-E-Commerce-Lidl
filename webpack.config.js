@@ -39,6 +39,15 @@ module.exports = {
                     ]
                 })
             },
+            {
+                test: /\.(png|jpg|svg)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {}
+                    }
+                ]
+            }
         ],
     },
     plugins: [

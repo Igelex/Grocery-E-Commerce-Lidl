@@ -5,6 +5,7 @@ import 'jquery-ui-bundle';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../stylesheets/circle.css';
 import '../stylesheets/style.css';
+import 'jquery-ui-bundle/jquery-ui.css';
 //import 'bulma/css/bulma.css';
 
 let bakets_items = [];
@@ -73,3 +74,9 @@ function addItemToBasket(title, img) {
         $('#basket').fadeIn(300);
     }
 }
+
+$( "#datepicker" ).datepicker();
+
+$('document').ready(function () {
+    $('main').fadeIn(500);
+});
