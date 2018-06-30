@@ -3,6 +3,9 @@ import 'popper.js';
 import 'jquery-ui-bundle';
 //import 'jquery-ui-bundle/jquery-ui.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../stylesheets/circle.css';
+import '../stylesheets/style.css';
+import 'bulma/css/bulma.css';
 
 let bakets_items = [];
 
@@ -48,6 +51,10 @@ $('.card').each((i, item) => {
 
         bakets_items.push(new_item);
     })
+});
+
+$('.card-img-top').click(() => {
+    window.location = '/details';
 });
 
 function addItemToBasket(title, img) {
