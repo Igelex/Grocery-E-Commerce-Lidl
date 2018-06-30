@@ -203,3 +203,21 @@ header .topbar {
     border: 4px solid red;
     border-radius: 100%;
 }
+
+.far.fa-star {
+    color: #adadad;
+}
+
+.fas.fa-star.category1{
+    color: #4db53c;
+}
+.fas.fa-star.category2{
+    color: #dd9d22;
+}
+.fas.fa-star.category3{
+    color: #dd4c3e;
+}
+.fas.fa-star.category4{
+    color: #307bbb;
+}
+

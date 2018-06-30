@@ -5,7 +5,7 @@ import 'jquery-ui-bundle';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../stylesheets/circle.css';
 import '../stylesheets/style.css';
-import 'bulma/css/bulma.css';
+//import 'bulma/css/bulma.css';
 
 let bakets_items = [];
 
