@@ -4,8 +4,8 @@ Service development within the university study course - introducing grocery e-c
 
 This application is a simple minimalistic prototype, which will be used only for educational purposes for project presentation
 
-![alt text](https://github.com/Igelex/Grocery-E-Commerce-Lidl/blob/master/public/images/screen1.png "Logo Title Text 1")
-![alt text](https://github.com/Igelex/Grocery-E-Commerce-Lidl/blob/master/public/images/screen2.png "Logo Title Text 1")
+You can see screenshots of the prototype [here](https://drive.google.com/open?id=1j6GSVkabUoEci4xYYCPzvunhtR7noFWC).
+
 
 To run the application just do the following steps:
 + download the project folder or clone the repository
